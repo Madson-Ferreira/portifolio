@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madson Ferreira Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Madson Ferreira</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-en="Home" data-pt="Início" data-it="Home">Início</a></li>
+      <li><a href="#about" class="nav-link" data-en="About" data-pt="Sobre" data-it="Chi Sono">Sobre</a></li>
+      <li><a href="#services" class="nav-link" data-en="Services" data-pt="Serviços" data-it="Servizi">Serviços</a></li>
+      <li><a href="#contact" class="nav-link" data-en="Contact" data-pt="Contato" data-it="Contatto">Contato</a></li>
+    </ul>
+    <div class="toggles">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="lang-toggle" aria-label="Toggle language">PT</button>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Home -->
+  <section id="home" class="section home-section">
+    <div class="home-container">
+      <div class="image-wrapper">
+        <img src="Madson.png" alt="Foto do Madson">
+      </div>
+      <div class="home-text">
+        <h1 data-en="Hi, I'm Madson" data-pt="Olá, eu sou Madson" data-it="Ciao, sono Madson">Olá, eu sou Madson</h1>
+        <p data-en="Developer & IT Specialist" data-pt="Desenvolvedor & Especialista em TI" data-it="Sviluppatore & Specialista IT">Desenvolvedor & Especialista em TI</p>
+        <a href="#services" class="btn btn-primary" data-en="View My Services" data-pt="Ver meus serviços" data-it="Vedi i miei servizi">Ver meus serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about-section">
+    <h2 data-en="About Me" data-pt="Sobre Mim" data-it="Chi Sono">Sobre Mim</h2>
+    <p data-en="Passionate developer focused on modern IT solutions." data-pt="Desenvolvedor apaixonado por soluções modernas de TI." data-it="Sviluppatore appassionato di soluzioni IT moderne.">
+      Desenvolvedor apaixonado por soluções modernas de TI.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section work-section">
+    <h2 data-en="My Services" data-pt="Meus Serviços" data-it="I miei Servizi">Meus Serviços</h2>
+    <div class="work-grid">
+      <div class="service-card">
+        <h3 data-en="Translator" data-pt="Tradutor" data-it="Traduttore">Tradutor</h3>
+        <p data-en="Professional translation service." data-pt="Serviço de tradução profissional." data-it="Servizio di traduzione professionale.">Serviço de tradução profissional.</p>
+      </div>
+      <div class="service-card">
+        <h3 data-en="Website Creation" data-pt="Criar Site" data-it="Creazione Siti">Criar Site</h3>
+        <p data-en="Modern responsive website development." data-pt="Desenvolvimento de sites modernos e responsivos." data-it="Sviluppo di siti web moderni e responsivi.">Desenvolvimento de sites modernos e responsivos.</p>
+      </div>
+      <div class="service-card">
+        <h3 data-en="Financial Planner" data-pt="Planejador Financeiro" data-it="Pianificatore Finanziario">Planejador Financeiro</h3>
+        <p data-en="Personal finance organization and planning." data-pt="Organização e planejamento financeiro pessoal." data-it="Organizzazione e pianificazione finanziaria personale.">Organização e planejamento financeiro pessoal.</p>
+      </div>
+      <div class="service-card">
+        <h3 data-en="IT Services" data-pt="TI Geral" data-it="Servizi IT">TI Geral</h3>
+        <p data-en="IT support and consulting." data-pt="Suporte e consultoria de tecnologia." data-it="Supporto e consulenza IT.">Suporte e consultoria de tecnologia.</p>
+      </div>
+      <div class="service-card">
+        <h3 data-en="BIOS & Configs" data-pt="Ajuste de BIOS" data-it="BIOS e Configurazioni">Ajuste de BIOS</h3>
+        <p data-en="BIOS and electronic configuration." data-pt="Configuração de BIOS e eletrônicos." data-it="Configurazione BIOS e dispositivi elettronici.">Configuração de BIOS e eletrônicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <h2 data-en="Contact" data-pt="Contato" data-it="Contatto">Contato</h2>
+    <form id="contact-form" action="https://formspree.io/f/xrblqyll" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required data-placeholder-en="Your Name" data-placeholder-pt="Seu nome" data-placeholder-it="Il tuo nome">
+      <input type="email" name="_replyto" placeholder="Seu email" required data-placeholder-en="Your Email" data-placeholder-pt="Seu email" data-placeholder-it="La tua email">
+      <textarea name="message" placeholder="Sua mensagem" required data-placeholder-en="Your Message" data-placeholder-pt="Sua mensagem" data-placeholder-it="Il tuo messaggio"></textarea>
+      <button type="submit" class="btn btn-primary" data-en="Send" data-pt="Enviar" data-it="Invia">Enviar</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Madson Ferreira. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
