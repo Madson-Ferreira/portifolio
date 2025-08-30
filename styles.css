@@ -247,63 +247,42 @@ header {
 }
 
 /* Grid de Serviços */
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  margin-top: 3rem;
-  padding: 0 1rem;
+/* Services Cards */
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:2rem;
+  margin-top:2rem;
 }
 
-/* Card */
-.service-card {
-  background: var(--secondary-bg);
-  padding: 2.5rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-  text-align: center;
-  transition: all 0.35s ease;
-  opacity: 0;
-  transform: translateY(40px);
+.service-card{
+  background:var(--secondary-bg);
+  padding:2rem 1rem;
+  border-radius:16px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3);
+  transition:transform 0.3s,box-shadow 0.3s;
+  opacity:0;
+  transform:translateY(30px);
 }
 
-/* Animação ao carregar */
-.service-card.fade-in {
-  opacity: 1;
-  transform: translateY(0);
+.service-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 12px 35px var(--primary-hover);
 }
 
-/* Efeito no hover */
-.service-card:hover {
-  transform: translateY(-12px) scale(1.04);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2),
-              0 0 15px var(--primary-hover);
+.service-card.fade-in{
+  opacity:1;
+  transform:translateY(0);
 }
 
-/* Título */
-.service-card h3 {
-  color: var(--primary);
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 1rem 0;
+.service-card h3{
+  color:var(--primary);
+  margin-bottom:10px;
 }
 
-/* Texto */
-.service-card p {
-  color: var(--text);
-  font-size: 1rem;
-  line-height: 1.6;
+.service-card p{
+  color:var(--text);
 }
-
-/* Ícones (caso use) */
-.service-card i,
-.service-card svg {
-  font-size: 2.5rem;
-  color: var(--primary);
-  margin-bottom: 1rem;
-  transition: color 0.3s ease;
-}
-
 .service-card:hover i,
 .service-card:hover svg {
   color: var(--primary-hover);
@@ -384,6 +363,7 @@ header {
     grid-template-columns:1fr;
   }
 }
+
 
 
 
