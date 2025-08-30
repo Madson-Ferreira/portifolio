@@ -152,7 +152,7 @@ header {
 /* Sections */
 .section{
   padding:5rem 2rem;
-  max-width:1100px;
+  max-width:2100px;
   margin:0 auto;
 }
 
@@ -163,9 +163,9 @@ header {
   align-items:center;
   gap:3rem;
   flex-wrap:wrap;
-  min-height:80vh;
+  min-height:92vh;
   background:linear-gradient(135deg,var(--primary) 0%,#720026 100%);
-  border-radius:20px;
+  border-radius:0px;
   box-shadow:0 8px 20px rgba(0,0,0,0.4);
   color:#fff;
 }
@@ -358,4 +358,5 @@ header {
     grid-template-columns:1fr;
   }
 }
+
 
