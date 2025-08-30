@@ -69,7 +69,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-link {
@@ -249,7 +249,7 @@ header {
 /* Services Cards */
 .work-grid{
   display:grid;
-
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:2rem;
   margin-top:2rem;
 }
@@ -358,5 +358,6 @@ header {
     grid-template-columns:1fr;
   }
 }
+
 
 
